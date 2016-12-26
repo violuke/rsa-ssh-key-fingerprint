@@ -8,7 +8,7 @@ php:
 
 before_script:
   - composer self-update
-  - composer install --dev
+  - composer install
 
 script:
   - phpunit --bootstrap tests/bootstrap.php.dist tests/FingerprintTest.php --coverage-text
