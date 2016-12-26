@@ -11,7 +11,7 @@ https://packagist.org/packages/violuke/rsa-ssh-key-fingerprint
 
 ## Installation
 ```
-composer install violuke/rsa-ssh-key-fingerprint
+composer require violuke/rsa-ssh-key-fingerprint
 ```
 
 ## Usage
