@@ -1,10 +1,9 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use violuke\RsaSshKeyFingerprint\FingerprintGenerator;
 use violuke\RsaSshKeyFingerprint\InvalidInputException;
 
-class FingerprintTest extends TestCase
+class FingerprintTest extends \PHPUnit_Framework_Testcase
 {
 
 
