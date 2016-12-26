@@ -1,2 +1,24 @@
 # rsa-ssh-key-fingerprint
 PHP class for generating fingerprints from RSA SSH public keys
+
+[![Build Status](https://travis-ci.org/violuke/rsa-ssh-key-fingerprint.svg?branch=master)](https://travis-ci.org/violuke/rsa-ssh-key-fingerprint)
+
+## Installation
+```
+composer install violuke/rsa-ssh-key-fingerprint
+```
+
+## Usage
+See tests for some examples
+
+Example:
+```php
+$key = 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHbry1PSM+P0eQZX32b8Gy/cAkxktpzB0hVPnvLDAqUGA2k7e4MJz7V4jYpNqeWUMqElKSAgn/GYwra7U2YpA/eZWSPpWIL2pwy4oQ2+bRaSzlt6wyB4aTLG1dHRFl+kYK3dN3XDdjY2Fx+xQX809eeWtmqBWy5khbQ2Fx0ovK6f0mSbtJRMrLioBYQ/2YQXeR5HQH8CjLZHJ8XeY4BjJ0D+W0yRim+uD7d3CqCUlR2BVDi0MevVMnvwefKQD9cJMOJSsHdGP8Vm/PMpZ5tS4JSTULVkBHfzpC/2D7AI4jbAxUO9j7kChaRY+te+6mYLJGkUtgMDOrTNTaOEAKjeO/ lukecousins@Lukes-iMac.local';
+$fingerprint = violuke\RsaSshKeyFingerprint\FingerprintGenerator::getFingerprint($key);
+echo $fingerprint;
+```
+
+Outputs:
+```
+74:e7:80:bf:89:11:31:55:f7:4d:78:86:0d:fd:13:f5
+```
