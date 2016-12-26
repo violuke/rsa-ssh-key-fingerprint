@@ -2,6 +2,12 @@
 PHP class for generating fingerprints from RSA SSH public keys
 
 [![Build Status](https://travis-ci.org/violuke/rsa-ssh-key-fingerprint.svg?branch=master)](https://travis-ci.org/violuke/rsa-ssh-key-fingerprint)
+[![Packagist](https://img.shields.io/packagist/v/violuke/rsa-ssh-key-fingerprint.svg?maxAge=2592000)](https://github.com/violuke/rsa-ssh-key-fingerprint)
+[![Packagist](https://img.shields.io/packagist/dt/violuke/rsa-ssh-key-fingerprint.svg?maxAge=2592000)](https://github.com/violuke/rsa-ssh-key-fingerprint)
+[![Packagist](https://img.shields.io/packagist/dm/violuke/rsa-ssh-key-fingerprint.svg?maxAge=2592000)](https://github.com/violuke/rsa-ssh-key-fingerprint)
+[![Packagist](https://img.shields.io/packagist/l/violuke/rsa-ssh-key-fingerprint.svg?maxAge=2592000)](https://github.com/violuke/rsa-ssh-key-fingerprint)
+
+https://packagist.org/packages/violuke/rsa-ssh-key-fingerprint
 
 ## Installation
 ```
