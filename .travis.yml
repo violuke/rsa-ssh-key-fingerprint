@@ -13,4 +13,4 @@ before_script:
   - composer install --dev
 
 script:
-  - php vendor/bin/phpunit --bootstrap tests/bootstrap.php.dist tests/FingerprintTest.php --coverage-text
+  - phpunit --bootstrap tests/bootstrap.php.dist tests/FingerprintTest.php --coverage-text
