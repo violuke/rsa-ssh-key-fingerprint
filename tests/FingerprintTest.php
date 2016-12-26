@@ -10,20 +10,20 @@ class FingerprintTest extends TestCase
 
     public function testValidFingerprints()
     {
-        $testCases = [
-            [
+        $testCases = array(
+            array(
                 'key' => 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHvEgFEN9hKtRK8RWklwRo6+ZmEceTEn1zN9rgXyGXrRtsmELf8ZEw5MpfI6S6l2OFJaruhEKSfe1Qm+zPdQZHcghmCN7rVpvy18OCJq+rTCUt7M39TKJ6QRAWHiRSMqL3ht8dGRbOLpTZLCBX3Z1/hdPz1ye/EMwTY7x4Tzofp2tPlcnBO9Zvh5iksLpL7CcZd0Z7BGlgE2eFwPZ4vRR0iSBQMHmHEPLX6boWhgFz/uORxu0gJEixz+FFwavYAZGpGGZrJQ90Pcejk9e1iCohRq+106jf0I5u1j0G7FUeMpsmSGnuFRXbcnywiHLyHLA0gTKXaWJHID6FxfqEoTAb lukecousins@Lukes-iMac.local',
                 'fingerprint' => '47:ae:96:ec:e0:b7:bc:59:69:db:24:37:56:21:8f:46',
-            ],
-            [
+            ),
+            array(
                 'key' => 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHbry1PSM+P0eQZX32b8Gy/cAkxktpzB0hVPnvLDAqUGA2k7e4MJz7V4jYpNqeWUMqElKSAgn/GYwra7U2YpA/eZWSPpWIL2pwy4oQ2+bRaSzlt6wyB4aTLG1dHRFl+kYK3dN3XDdjY2Fx+xQX809eeWtmqBWy5khbQ2Fx0ovK6f0mSbtJRMrLioBYQ/2YQXeR5HQH8CjLZHJ8XeY4BjJ0D+W0yRim+uD7d3CqCUlR2BVDi0MevVMnvwefKQD9cJMOJSsHdGP8Vm/PMpZ5tS4JSTULVkBHfzpC/2D7AI4jbAxUO9j7kChaRY+te+6mYLJGkUtgMDOrTNTaOEAKjeO/ lukecousins@Lukes-iMac.local',
                 'fingerprint' => '74:e7:80:bf:89:11:31:55:f7:4d:78:86:0d:fd:13:f5',
-            ],
-            [
+            ),
+            array(
                 'key' => 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDtxokPPjj4DNFrgNwIeyNB17m9+Afc7zUyjJr7E6RcrSyxnvwVrYyQDC0YJ6p6Ze4VUvx2Rv8RaU01J4wbVSY4TQN0NAR0A+uxnOuvu1MMu6/6cm2cU+QDHQWpPSGV4AQG01GZuUZMrM9uHJ3ZxW3ZP7gc5JSmAkvUi2TsMVRwQIFhTNG9jbJACV76z2GrF7Jze5SEH93hfSfE+qm4AM2Tiq7B7Ion/o/XIHbtIMte1y8HYC568aOHK+BbDLhn50UYl834YQzLsu3DBfGMONKFTcJmvzFrOdK5CSqKSlEygRGhZ3Cw8L1ReKYvWRtnCfsKHmnz1ZPV6d/MwTjKmJvx',
                 'fingerprint' => 'b1:17:8b:f3:34:8a:17:c7:70:ac:dd:c9:da:b2:b6:bd',
-            ],
-        ];
+            ),
+        );
 
         foreach ($testCases as $case){
             $generatedFingerprint = FingerprintGenerator::getFingerprint($case['key']);
