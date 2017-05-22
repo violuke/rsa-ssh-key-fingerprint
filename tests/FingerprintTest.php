@@ -3,7 +3,7 @@
 use violuke\RsaSshKeyFingerprint\FingerprintGenerator;
 use violuke\RsaSshKeyFingerprint\InvalidInputException;
 
-class FingerprintTest extends \PHPUnit_Framework_Testcase
+class FingerprintTest extends \PHPUnit\Framework\TestCase
 {
 
 
