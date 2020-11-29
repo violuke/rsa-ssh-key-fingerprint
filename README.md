@@ -10,8 +10,8 @@ PHP class for generating fingerprints from RSA SSH public keys
 https://packagist.org/packages/violuke/rsa-ssh-key-fingerprint
 
 ## Installation
-```
-composer require violuke/rsa-ssh-key-fingerprint
+```bash
+$ composer require violuke/rsa-ssh-key-fingerprint
 ```
 
 ## Usage (default MD5 fingerprint)
@@ -36,4 +36,10 @@ echo $fingerprint;
 Outputs:
 ```
 6EbRDmqVEmgAD6FOXQuIiG8uUSteIDKZzj2bgZ+88V0=
+```
+
+## Testing
+
+```bash
+$ ./vendor/bin/phpunit tests
 ```
